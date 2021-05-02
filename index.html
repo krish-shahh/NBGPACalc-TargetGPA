@@ -1,0 +1,137 @@
+
+<html>
+<head>
+<title>NB GPA Calculator</title>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet href=http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css>
+<link rel=stylesheet type=text/css href=style.css>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language=javascript type=text/javascript src=js/gpa_calc.js></script>
+<script language=javascript type=text/javascript src=js/gpa_calc_ui.js></script>
+<script language=javascript type=text/javascript src=js/gpa_calc_jq_plugin.js></script>
+<script language=javascript type=text/javascript src=js/init_example.js></script>
+<script language=javascript type=text/javascript src=js/target_gpa_calculator.js></script>
+
+</head>
+<body>
+<center>
+
+<center>
+<div id=container>
+<h2 align=center>NB Grade Point Average Calculator</h3>
+<form class=fillpage name=gpa_calc id=gpa_calc autocomplete=off>
+<fieldset class=fillpage>
+<center>
+<a name="newclass">
+<table id=termUnits>
+<tr>
+<th scope=col>Class Name<br></th>
+<th scope=col>Grade<br></th>
+<th scope=col>Credits<br></th>
+</tr>
+
+<tr id=newRow>
+<td><input type=text name=course[] placeholder="New Class" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="shortInput" maxlength="4" class="shortInput" size=4 />
+</td>
+<td>
+<input type="text" name="units[]" id="shortInput" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+<tr>
+<td><input type=text name=course[] id=course2 placeholder="Class 1" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="gradeHigh2" maxlength="4" class="shortInput" size=4 />
+<td>
+<input type="text" name="units[]" id="units2" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+<tr>
+<td><input type=text name=course[] id=course3 placeholder="Class 2" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="gradeHigh3" maxlength="4" class="shortInput" size=4 />
+<td>
+<input type="text" name="units[]" id="units3" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+<tr>
+<td><input type=text name=course[] id=course4 placeholder="Class 3" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="gradeHigh4" maxlength="4" class="shortInput" size=4 />
+<td>
+<input type="text" name="units[]" id="units4" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+<tr>
+<td><input type=text name=course[] id=course5 placeholder="Class 4" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="gradeHigh5" maxlength="4" class="shortInput" size=4 />
+<td>
+<input type="text" name="units[]" id="units5" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+<tr>
+<td><input type=text name=course[] id=course6 placeholder="Class 5" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="gradeHigh6" maxlength="4" class="shortInput" size=4 />
+<td>
+<input type="text" name="units[]" id="units6" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+<tr>
+<td><input type=text name=course[] id=course7 placeholder="Class 6" size=13 /></td>
+<td>
+<input type="text" name="gradeHigh[]" id="gradeHigh7" maxlength="4" class="shortInput" size=4 />
+<td>
+<input type="text" name="units[]" id="units7" maxlength="4" class="shortInput" size=5 />
+</td>
+</tr>
+
+</table>
+<a style="color:#F27214; font-weight: bold;" id=addRow class="btn btn-primary btn-small" href=#newclass>Add Class</a>
+<br>
+<a style="color:#F27214; font-weight: bold;" id=addRow class="btn btn-primary btn-small" href="index.html">Clear All</a>  
+  </br>
+</center>
+<br>
+<div class=UNITS id=credits></div>
+<div class=GRADE id=gpa></div>
+
+</fieldset>
+</form>
+
+<div id=note>When inputting percentages, leave off the "%" sign.</div>
+<div style="color:red" id=note><b>For Weighted GPA: Add Extra Points to Overall Grade --> (7 - Honors, 10 - AP)</b></div>
+<div style="color:red" id=note><b>Use Credits from <a href="https://www.nburlington.com/o/NBC%20HS/page/program-of-studies--26" target="_blank">Program of Studies</a> or PowerSchool</b></div>
+<div id=note><a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/387775/GPA_Calculation.pdf" target="_blank">In-Depth Calculation Documentation</a></div
+<div id=note><b>Created by: </b><a href="mailto:2003kshah@gmail.com">Krish Shah</a> (Class of '22)</div>
+
+</div>
+</center>
+<br>
+</div>
+<br>
+<center>
+<div style=width:185>
+<div style=float:right> 
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+</div>
+</center>
+<br><br>
+<br>
+</body>
+</html>
