@@ -114,6 +114,45 @@
 <div id=note><a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/387775/GPA_Calculation.pdf" target="_blank">In-Depth Calculation Documentation</a></div
 <div id=note><b>Created by: </b><a href="mailto:2003kshah@gmail.com">Krish Shah</a> (Class of '22)</div>
 
+  <div id=targetContainer>
+	<h2 align=center>Target GPA Calculator</h3>
+	<form name="GoalGPACalc">
+	  <table id="tgc" class="wg-calc" align="center">
+		<tr>
+		  <td>
+			<span>Current GPA</span></td>
+		  <td>
+			<input type="text" name="currGPA" size="5"></td>
+		</tr>
+		<tr>
+		  <td>
+		   <span>Current Credits</span></td>
+		  <td>
+			<input type="text" name="currCredits" size="5"></td>
+		</tr>
+		<tr>
+		  <td>
+			<span>Goal GPA</span></td>
+		  <td>
+			<input type="text" name="goalGPA" size="5"></td>
+		</tr>
+		<tr>
+		  <td>
+		   <span>Additional Credits </span></td>
+		  <td>
+		   <input type="text" name="newCredits" size="5"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<input class="calc-button" type="button" value="Calculate" name="CalcGoal" onclick="GoalCalc()">
+			<input class="calc-button" type="reset" value="Reset">
+			</td>
+		</tr>
+	  </table>
+		<div class="value"></div>
+	</form>
+</div>
+	
 </div>
 </center>
 <br>
